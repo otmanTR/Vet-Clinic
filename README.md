@@ -1,20 +1,3 @@
-# curriculum-databases-projects-template
-
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
-
-
-## Getting Started
-
-This repository includes files with plain SQL that can be used to recreate a database:
-
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
-
-<a name="readme-top"></a>
-
-
 
 # 📗 Table of Contents
 
@@ -37,8 +20,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ](#faq)
 - [📝 License](#license)
-
-
 
 # 📖 [ Vet-Clinic-Database] <a name="about-project"></a>
 
@@ -109,7 +90,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-you can clone this project with : https://github.com/otmanTR/Vet-Clinic-Database.git
+you can clone this project with : https://github.com/otmanTR/Vet-Clinic.git
 
 ### Install
 
@@ -190,10 +171,3 @@ I would like to thank all Microver family to their support.
 ## ❓ FAQ <a name="faq"></a>
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
-
-
-
-
-## 📝 License <a name="license"></a>
-This project is [MIT](./MIT.md) licensed.
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
