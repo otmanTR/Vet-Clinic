@@ -37,3 +37,21 @@ INSERT INTO owners (full_name, age) VALUES
   ('Jodie Whittaker', 38);
 
   SELECT * FROM owners;
+
+--insert species data
+
+INSERT INTO species (name) VALUES
+  ('Pokemon'),
+  ('Digimon');
+
+  SELECT * FROM species;
+
+  --modify animals
+
+UPDATE animals
+ SET species_id = (CASE
+ WHEN name LIKE '%mon' THEN (SELECT id FROM species WHERE name = 'Digimon')
+ ELSE (SELECT id FROM species WHERE name = 'Pokemon')
+ END);
+
+SELECT id, name, species_id FROM animals;
