@@ -23,3 +23,4 @@ INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg, 
 VALUES ('Blossom', '1998-10-13', 3, 't', 17.0, '');
 INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg, species)
 VALUES ('Ditto', '2022-05-14', 4, 't', 22.0, '');
+
