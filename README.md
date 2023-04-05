@@ -1,4 +1,5 @@
 
+
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -21,11 +22,13 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 [ Vet-Clinic-Database] <a name="about-project"></a>
+
+
+# 📖 [ Vet-Clinic] <a name="about-project"></a>
 
 
 
-**[Vet-Clinic-Database]** is an SQL database project which you can show the animals including their properties.
+**[Vet-Clinic]** is an SQL database project which you can show the animals including their properties.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -53,11 +56,10 @@
   </ul>
 </details>
 
-<!-- Features -->
+
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
 - **[Database queries]**
 
@@ -77,13 +79,10 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
-To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
 
 
 ### Setup
@@ -170,4 +169,8 @@ I would like to thank all Microver family to their support.
 
 ## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
+
+
+## 📝 License <a name="license"></a>
+This project is [MIT](./MIT.md) licensed.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
