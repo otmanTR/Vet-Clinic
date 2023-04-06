@@ -31,3 +31,28 @@ ALTER TABLE animals
 
   ALTER TABLE animals
   ALTER COLUMN id SET DEFAULT nextval('animals_id_seq');
+
+  /* Day four the used queries */
+
+  -- create table vets
+
+  CREATE TABLE vets ( id SERIAL PRIMARY KEY, name VARCHAR(255) NOT NULL, age INTEGER, date_of_graduation DATE );
+
+  --create specializations table
+
+  CREATE TABLE specializations (
+   id SERIAL PRIMARY KEY,
+   vet_id INTEGER REFERENCES vets(id),
+   species_id INTEGER REFERENCES species(id),
+   UNIQUE (vet_id, species_id)
+  );
+
+  --create visits table
+  
+  CREATE TABLE visits (
+    id SERIAL PRIMARY KEY,
+   vet_id INTEGER REFERENCES vets(id),
+   animal_id INTEGER REFERENCES animals(id),
+   visit_date DATE,
+   UNIQUE (vet_id, animal_id, visit_date)
+  );
