@@ -46,3 +46,13 @@ ALTER TABLE animals
    species_id INTEGER REFERENCES species(id),
    UNIQUE (vet_id, species_id)
   );
+
+  --create visits table
+  
+  CREATE TABLE visits (
+    id SERIAL PRIMARY KEY,
+   vet_id INTEGER REFERENCES vets(id),
+   animal_id INTEGER REFERENCES animals(id),
+   visit_date DATE,
+   UNIQUE (vet_id, animal_id, visit_date)
+  );
