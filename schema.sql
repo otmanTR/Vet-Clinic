@@ -31,3 +31,9 @@ ALTER TABLE animals
 
   ALTER TABLE animals
   ALTER COLUMN id SET DEFAULT nextval('animals_id_seq');
+
+  /* Day four the used queries */
+
+  -- create table vets
+
+  CREATE TABLE vets ( id SERIAL PRIMARY KEY, name VARCHAR(255) NOT NULL, age INTEGER, date_of_graduation DATE );
