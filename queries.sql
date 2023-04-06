@@ -79,3 +79,54 @@ SELECT species, AVG(escape_attempts) AS avg_escape_attempts
 FROM animals
 WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31'
 GROUP BY species;
+
+/*Day three the used queries*/
+
+-- Melody's animals
+
+SELECT animals.name
+FROM animals
+JOIN owners ON animals.owner_id = owners.id
+WHERE owners.full_name = 'Melody Pond';
+
+-- list of pokemon animals
+
+SELECT animals.name
+FROM animals
+JOIN species ON animals.species_id = species.id
+WHERE species.name = 'Pokemon';
+
+-- list of all animals and owns
+
+SELECT owners.full_name, animals.name
+FROM owners
+LEFT JOIN animals ON owners.id = animals.owner_id;
+
+--animal numbers per spacies
+
+SELECT species.name, COUNT(animals.id)
+FROM species
+JOIN animals ON species.id = animals.species_id
+GROUP BY species.name;
+
+--list of Jennifer's digimons
+
+SELECT animals.name
+FROM animals
+JOIN owners ON animals.owner_id = owners.id
+JOIN species ON animals.species_id = species.id
+WHERE owners.full_name = 'Jennifer Orwell' AND species.name = 'Digimon';
+
+--list of animals owned by Dean Winchester that haven't tried to escape
+
+SELECT * FROM animals WHERE owner_id = 5 AND escape_attempts = 0;
+
+-- who has most animals
+
+SELECT owners.full_name, COUNT(animals.id) AS num_animals
+FROM owners
+JOIN animals ON owners.id = animals.owner_id
+GROUP BY owners.full_name
+ORDER BY num_animals DESC
+LIMIT 1;
+
